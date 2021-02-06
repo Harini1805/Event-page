@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>Event page</title>
+        <link rel="stylesheet" href="timer.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <img src="logo.jpeg" width="190px" height="120px">
+        <div class="container" >
+            <h1>Upcoming Event</h1>
+                <div class="container1">
+                    <div class="workshop">
+                    Web development workshop
+                    <div class="timings">Schedule : <br>
+                    Timings  :  </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="timer" id="demo"></div>
+                    <div class="day">days</div>
+                    <div class="hour">hours</div>
+                    <div class="minute">minutes</div>
+                    <div class="second">seconds</div>
+                </div>
+                <div class="container3">
+                    <a href="#"><button class="button one">REGISTER </button></a>
+                </div>
+        </div>
+        <h2>Certificate</h2>
+        <div class="certificate">
+        <img class="img" src="certificate1.jpg">
+        <h3>Attend the workshop successfully to get your certificate of participation.Take up the final test and 
+            score better to get certificate of merit upon scoring 80+ in your final assessment.
+        </h3></div>
+      
+
+<div class="accordion">
+  <h2>Frequently Asked Question</h2>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      How to register for the Workshop?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        Select <b>register </b> ! button available at the top most part of the screen,you will redirected to the Google Forms . 
+        Register with your basic details and you will be receiving your confirmation message.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      How to attend the Workshop?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        You can attend the wokshop using your mobile or a desktop through Google meet Application.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      When will i get my workshop details ?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        You will get credentails to access the workshop within 30 minutes of your registration through your registered number and email.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      When will i get  my certificate?
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        You will get the certificate within 24 hours after completion of the workshop.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form">
+<h2 class="qns">Have More Questions?</h2>
+<h4 class="soln">Drop a message and we will reach you with solutions.</h4></div>
+<div class="center">
+<p>
+    
+    <h5>Please fill in the following fields:</h5><br>
+    
+    <ul class="required">
+        <li>Name</li>
+        <li>Email Address</li>
+        <li>Message</li>
+    </ul>
+</p>
+</div>
+<form enctype="multipart/form-data">
+    
+    <p><label for="name"></label>
+        <div class="name"><input type="text" name="username" placeholder="Name" id="name" required></div></p>
+    <p><label for="email"></label>
+        <input class="email" type="email" name="email-id" placeholder="Email-Id" id="email" required></p>
+    <p>
+        <label for="phone"></label>
+        <input class="phone" type="number" name="number" placeholder="Phone Number" id=phone required>
+    </p>
+    <p>
+        <label for="message"></label>
+        <textarea class="message" name="comment" cols="43" rows="5" placeholder="Message" id="message"></textarea>
+    </p>
+    <p>
+        <a href="#"><button class="button two">SEND MESSAGE</button></a>
+    </p>
+</form>
+</div>
+
+
+
+<script>
+  const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+    
+    
+     const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+     if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+      currentlyActiveAccordionItemHeader.classList.toggle("active");
+      currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if(accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+    
+  });
+});
+</script>
+            
+
+            <script>
+                var countDownDate = new Date("feb 7, 2021 15:37:25").getTime();
+              
+                var x = setInterval(function() {
+                
+                  var now = new Date().getTime();
+                
+                  var distance = countDownDate - now;
+                
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+                  document.getElementById("demo").innerHTML = days  +"  :  " + "&nbsp"+hours + " : "+"&nbsp"
+  + minutes + "&nbsp"+ " :  " + seconds ;
+                
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+                </script>
+                
+
+        </div>
+    </body>
+</html>
