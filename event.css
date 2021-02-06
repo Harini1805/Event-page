@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:black;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  font-size: 80px;
+  color:white;
+}
+.container{
+    background: black;
+    height: 450px;
+}
+.container1{
+  position: absolute;
+  top: 250px;
+  left: 70px;
+  background: white;
+  height: 200px;
+  width: 430px;
+}
+.container2{
+    position: absolute;
+    top: 250px;
+    left:500px;
+    height: 200px;
+    width: 420px;
+    font-size: 50px;
+    background:  #be003e;
+    text-align: center;
+    color: white;
+}
+.container3{
+    position: absolute;
+    top: 450px;
+    left: 450px;
+}
+.workshop{
+  padding: 50px;
+  font-size: 30px;
+  color: #be003e ;
+}
+.timings{
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  top: 120px;
+}
+.timer{
+  position: absolute;
+  top:60px;
+  left: 35px;
+}
+.day{
+    position: absolute;
+    top:110px;
+    font-size: 25px;
+    left:20px;
+}
+.hour{
+    position: absolute;
+    top:110px;
+    left:100px;
+    font-size: 25px;
+}
+.minute{
+    position: absolute;
+    top:110px;
+    left:185px;
+    font-size: 25px;
+}
+.second{
+    position: absolute;
+    top:110px;
+    left: 290px;
+    font-size: 25px;
+}
+.button{
+    background: #be003e;
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    border-radius: 30px;
+}
+.button:hover{
+  background: white;
+  color: #be003e;
+}
+.one{
+  top:25px;
+}
+.two{
+  top: 1880px;
+  left: 380px;
+}
+.certificate{
+  height: 350px;
+}
+h2 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+.img{
+  height: 300px;
+  width: 470px;
+  position: absolute;
+  left: 30px;
+}
+h3{
+  position: absolute;
+  top: 700px;
+  left: 540px;
+  color:  #be003e;
+  letter-spacing: 1.25px;
+  text-align: justify;
+  right: 20px;
+  font-size: 25px;
+}
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color:  #be003e ;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+.form{
+  text-align: center;
+  line-height: 10px;
+}
+.qns{
+  position: absolute;
+  top: 1440px;
+  left: 280px;
+}
+.soln{
+  position: absolute;
+  top: 1505px;
+  left:270px;
+  color:   #be003e;
+  font-size: 20px;
+}
+.required{
+  color:   #be003e;
+}
+.center{
+ margin-left:2%;
+ margin-top: 12%;
+}
+.name{
+  margin-top:4%;
+  margin-left:10%;
+  position: absolute;
+}
+.email{
+  margin-top:4%;
+  margin-left:58%;
+  position: absolute;
+}
+.phone{
+  margin-top:10%;
+  margin-left:10%;
+  position: absolute;
+}
+.message{
+  margin-top:16%;
+  margin-left:10%;
+  position: absolute;
+}
+input[type=text]{
+  width:250%;
+  height:6%;
+  border:3px solid  #be003e;
+  border-radius: 6px;
+  padding: 8px;
+  box-sizing:border-box;
+  border-color:  #be003e;
+  box-shadow: 0 0 2px 0  #be003e;
+  color:  #be003e;
+}
+input[type=email]{
+  width:30%;
+  height:2.25%;
+  border:3px solid  #be003e;
+  border-radius: 6px;
+  padding: 8px;
+  box-sizing:border-box;
+  border-color:  #be003e;
+  box-shadow: 0 0 2px 0  #be003e;
+  color:  #be003e;
+}
+input[type=number]{
+  width:30%;
+  height:2.25%;
+  border:3px solid  #be003e;
+  border-radius: 6px;
+  padding: 8px;
+  box-sizing:border-box;
+  border-color:  #be003e;
+  box-shadow: 0 0 2px 0  #be003e;
+  color:  #be003e;
+}
+textarea{
+  width:72%;
+  border:3px solid  #be003e;
+  border-radius: 6px;
+  padding: 8px;
+  box-sizing:border-box;
+  border-color:  #be003e;
+  box-shadow: 0 0 2px 0  #be003e;
+  color:  #be003e;
+}
+.submit{
+  margin-top: 25%;
+  margin-left:39% ;
+  position:absolute
+}
